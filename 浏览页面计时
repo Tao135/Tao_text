@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浏览时间</title>
+    <style>
+        p{
+            float: left;
+        }
+    </style>   
+</head>
+<body>
+    <p>浏览时间：</p>
+    <p id="time">--</p>
+</body>
+<script>
+    var s = 1 ;
+    setInterval(view,1000);         //每1000毫秒执行一次方法
+    function view(){
+        document.getElementById("time").innerHTML = s;    //获取id并在页面打印
+        s++;
+    }
+</script>
+</html>
