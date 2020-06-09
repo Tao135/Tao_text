@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>改变背景</title>
+</head>
+<body>
+    <div>
+        <input type="button" id="background" value="red"/>
+    </div>
+</body>
+<script>
+    var button = document.getElementById("background");
+    button.onclick = function background(){
+        document.bgColor="red";
+    }
+</script>
+</html>
