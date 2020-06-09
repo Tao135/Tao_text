@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>打印</title>
+</head>
+<body>
+</body>
+<script>
+    var x = +prompt("请输入0-100的正整数");
+    var sum = "";
+    var i,j;
+    while(x/parseInt(x) != 1 ||  x == "" || x < 0  || x > 100){          //判断当输入的不是正整数，为空，值小于0，大于100
+        x = prompt("请重新输入0-100的正整数");  
+    }  
+    x = parseInt(x);
+    for(i=0;i<x;i++){
+        for(j=0;j<=i;j++){
+            sum += "*";    //控制一行有多少个*
+        }
+        sum += "\n";       //控制打印换行
+    }  
+    console.log(sum);
+</script>
+</html>
