@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>打印</title>
+</head>
+<body>
+</body>
+<script>
+    var sum = "";
+    for(i=1;i<=9;i++){
+        for(j=1;j<=i;j++){
+            sum += i+ "*" +j+ "=" +i*j + "  ";    //控制一行的乘法，为了美观，添加空格
+        }
+        sum += "\n";       //控制打印换行
+    }  
+    console.log(sum);
+</script>
+</html>
